@@ -584,7 +584,7 @@ namespace Test
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(""group-name"", Namespace="""")]
     [System.ComponentModel.DesignerCategoryAttribute(""code"")]
-    public partial class Group_Name
+    public partial class GroupName
     {
 
         /// <summary>
