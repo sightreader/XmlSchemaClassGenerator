@@ -14,6 +14,9 @@ namespace ExampleProgram
                 Log = s => Console.WriteLine(s),
                 GenerateNullables = false,
                 PrivateMemberPrefix = "",
+                DataAnnotationMode = DataAnnotationMode.All,
+                EmitOrder = true,
+                GenerateInterfaces = false,
                 NamespaceProvider = new Dictionary<NamespaceKey, string>
                 {
                     { new NamespaceKey("http://wadl.dev.java.net/2009/02"), "MusicXmlSchema" }
@@ -29,6 +32,9 @@ namespace ExampleProgram
             {
                 Console.WriteLine($"Error: {ex.ToString()}");
             }
+
+            Console.WriteLine("Program complete.");
+            Console.ReadLine();
         }
     }
 }
